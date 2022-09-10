@@ -6,6 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Axios from "axios";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 import cloudyNight from "./assets/icons/cloudy-night.svg";
@@ -20,8 +21,6 @@ import CityComponent from "./components/CityComponent";
 import LogIn from "./components/LogIn";
 import WeatherComponent from "./components/WeatherInfoComponent";
 import { logout } from "./store/weatherApp";
-import React, { useCallback, useEffect, useState } from "react";
-import axios from "axios";
 
 export const WeatherIcons = {
   "01d": night,
@@ -59,13 +58,7 @@ const AppLabel = styled.span`
   font-size: 18px;
   font-weight: bold;
 `;
-const CloseButton = styled.span`
-  padding: 2px 3px;
-  background-color: black;
-  border-radius: 50%;
-  color: white;
-  position: absolute;
-`;
+
 
 function App() {
   const [city, updateCity] = useState();
