@@ -1,0 +1,8 @@
+.login__box {
+  -webkit-box-shadow: 4px 3px 27px 0px rgba(214, 214, 214, 0.48);
+  -moz-box-shadow: 4px 3px 27px 0px rgba(214, 214, 214, 0.48);
+  box-shadow: 4px 3px 27px 0px rgba(214, 214, 214, 0.48);
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+}
